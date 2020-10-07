@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: century gothic;
+}
+
+body{
+  justify-content: center;
+  align-items: center; 
+  display: flex; 
+  height: 100vh;
+  /* background-color:#1A081D  ; */ 
+  background-size: cover;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://s7d2.scene7.com/is/image/TWCNews/snowflake-formatted-snow-03222020jpg?wid=1250&hei=703&$wide-bg$");
+}
+.digital_clock_wrapper{
+  background-color: #1A081D; 
+  padding: 25px;
+  max-width: 350px;
+  width: 100%; 
+  text-align: center;
+  border: 3px solid#95478C   ;
+  border-radius: 10px; 
+  -webkit-box-reflect:below 1px linear-gradient(transparent,rgba(255, 255, 255, 0.1));
+  
+}
+
+.digital_clock_wrapper:hover{
+  background-color: #95478C ;
+  box-shadow: 0 0 20px #95478C ;
+}
+
+#digital_clock_time {
+    color: #66ff99;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+#digital_clock_date {
+    color: #66ff99;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+    
+}
