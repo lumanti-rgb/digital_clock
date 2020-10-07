@@ -1,3 +1,6 @@
+const clock_date=document.getElementById("digital_clock_date");
+const clock_time=document.getElementById("digital_clock_time");
+
 function showTime(){
 
     //Date
@@ -6,10 +9,10 @@ function showTime(){
     var year=d.getFullYear();           //get year
 
     var month=d.getMonth();             //get month
-    var montharray=["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var monthArray=["January","February","March","April","May","June","July","August","September","October","November","December"];
 
     var day=d.getDay();                 //get day
-    var dayarray=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var dayArray=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
     var date=d.getDate();                //get date
 
@@ -40,10 +43,10 @@ function showTime(){
             }
         
         //Time end
-        document.getElementById("digital_clock_date").innerHTML=dayarray[day]+ ", " + date +" "+montharray[month]+" "+year;
-        document.getElementById("digital_clock_time").innerHTML=h+":"+ m +":"+ s +" "+ midday;
+        clock_date.innerHTML=dayArray[day]+ ", " + date +" "+monthArray[month]+" "+year;
+        clock_time.innerHTML=h+":"+ m +":"+ s +" "+ midday;
 
-        setTimeout(showTime,1000); //setting timer
+        setTimeout(showTime,1000); //for every 1000 milliseconds(ie, 1 second) interval, activate the showTime() function.
 
         }
 
