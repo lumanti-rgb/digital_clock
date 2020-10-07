@@ -9,10 +9,11 @@ body{
   align-items: center; 
   display: flex; 
   height: 100vh;
-  /* background-color:#1A081D  ; */ 
   background-size: cover;
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://s7d2.scene7.com/is/image/TWCNews/snowflake-formatted-snow-03222020jpg?wid=1250&hei=703&$wide-bg$");
 }
+
+
 .digital_clock_wrapper{
   background-color: #1A081D; 
   padding: 25px;
@@ -22,8 +23,8 @@ body{
   border: 3px solid#95478C   ;
   border-radius: 10px; 
   -webkit-box-reflect:below 1px linear-gradient(transparent,rgba(255, 255, 255, 0.1));
-  
 }
+
 
 .digital_clock_wrapper:hover{
   background-color: #95478C ;
