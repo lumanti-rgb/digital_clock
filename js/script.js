@@ -47,7 +47,7 @@ function showTime() {
     clock_date.innerHTML = dayArray[day] + ", " + date + " " + monthArray[month] + " " + year;
     clock_time.innerHTML = h + ":" + m + ":" + s + " " + midday;
 
-    setTimeout(showTime, 1000); //for every 1000 milliseconds(ie, 1 second) interval, activate the showTime() function.
+    setInterval(showTime, 1000); //for every 1000 milliseconds(ie, 1 second) interval, activate the showTime() function.
 
 }
 
